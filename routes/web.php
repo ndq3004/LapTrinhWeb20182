@@ -12,12 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // return view('register');
+    return File::get(public_path() . '/demo.html');
 });
-Route::get('quan', function () {
+Route::get('ngoc', function () {
 	$josnArr = array(
-		array("quan" => "quan"),
-		array("quan" => "quan"),
+		array("quan" => "ngoc"),
+		array("quan" => "ngoc"),
 		array("quan" => "quan"),
 		array("quan" => "quan"),
 		array("quan" => "quan")
@@ -28,3 +29,4 @@ Route::get('db', function () {
 	$dbQ = DB::table("users") -> get();
 	return json_encode($dbQ);
 });
+Route::post("getData", "UserController@postData");

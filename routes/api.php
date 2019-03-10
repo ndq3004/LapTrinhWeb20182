@@ -16,3 +16,15 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post("/getData", "UserController@postData");
+Route::get('/ngoc', function () {
+	$josnArr = array(
+		array("quan" => "ngoc"),
+		array("quan" => "ngoc"),
+		array("quan" => "quan"),
+		array("quan" => "quan"),
+		array("quan" => "quan")
+	);
+	return json_encode($josnArr);
+});
