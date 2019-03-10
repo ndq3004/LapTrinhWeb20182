@@ -15,6 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('quan', function () {
-	$jsonVar = {['name'=>'Abigail', 'state'=>'CA'],['name'=>'Abigail', 'state'=>'CA']};
-	return response()->json($jsonVar);
+	$josnArr = array(
+		array("quan" => "quan"),
+		array("quan" => "quan"),
+		array("quan" => "quan"),
+		array("quan" => "quan"),
+		array("quan" => "quan")
+	);
+	return json_encode($josnArr);
+});
+Route::get('db', function () {
+	$dbQ = DB::table("users") -> get();
+	return json_encode($dbQ);
 });
