@@ -4941,7 +4941,7 @@ input[type="button"].btn-block {
 
 .card-header {
   padding: 0.75rem 1.25rem;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   color: inherit;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
@@ -10721,4 +10721,56 @@ body.sidebar-toggled footer.sticky-footer {
   body.sidebar-toggled footer.sticky-footer {
     width: calc(100% - 90px);
   }
+}
+nav.navbar.navbar-expand.navbar-dark.bg-dark.static-top img.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+}
+nav.navbar.navbar-expand.navbar-dark.bg-dark.static-top h6.nameweb{
+  float: right;
+  padding-top: 8px;
+  padding-left: 5px;
+}
+footer.sticky-footer a.navbar-brand.mr-1 img.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+footer.sticky-footer a.navbar-brand.mr-1 .nameweb{
+  float: right;
+  padding-top: 27px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+footer {
+  position: relative;
+}
+h6.hotline {
+  position: absolute;
+    right: 73px;
+    top: 34px;
+    font-size: 15px;
+    color: grey;
+}
+nav.navbar.navbar-expand.navbar-dark.bg-dark.static-top.password img.logo {
+      width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    left: -176px;   
+}
+body.bg-dark {
+  position: relative;
+}
+nav.navbar.navbar-expand.navbar-dark.bg-dark.static-top.password h6.nameweb{
+      float: right;
+    padding-top: 30px;
+    padding-left: 19px;
+    font-size: 25px;
+    position: absolute;
+    left: -68px;
+}
+tbody tr:hover{
+  color: red;
 }
